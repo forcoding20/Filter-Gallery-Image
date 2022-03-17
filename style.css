@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:wght@300&family=Raleway:ital@1&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-transform: uppercase;
+    background-color: rgb(212, 238, 247 / 54%);
+    font-family: 'League Gothic', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 20px;
+}
+
+ul li {
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+    background-color: transparent;
+    border:1px solid gray;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+ul li:hover{
+    background-color: #2985cf;
+    color: white;
+    box-shadow: 10px 9px 114px -16px rgba(0, 0, 0, 0.51);
+}
+
+
+.active{
+    background-color: #2985cf;
+    border-radius: 10px;
+    padding: 12px;
+    color: white;
+    border: none;
+    box-shadow: 10px 10px 107px -31px rgba(0, 0, 0, 0.58);
+}
+
+.prodcut{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.itembox{
+    position: relative;
+    box-shadow: 9px 10px 31px -22px rgb(0 0 0 /47%);
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.itembox img{
+    width: 250px;
+    height: 250px;
+    opacity: 1;
+    display: block;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    transition: 0.5s ease;
+}
+
+.itembox:hover img{
+    opacity: 0.3;
+}
+
+.middle{
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: 0.5s ease;
+}
+
+
+.itembox:hover .middle{
+    opacity: 1;
+}
+
+
+.text{
+    background-color: #2985cf;
+    color: white;
+    font-size: 10px;
+    padding: 14px 24px;
+    border-radius: 10px;
+    transition: ease-in-out 0.5s;
+
+}
+
+.text:hover{
+    background-color: #f9f9f9;
+    color: black;
+    font-weight: bold;
+}
